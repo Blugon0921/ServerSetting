@@ -1,4 +1,4 @@
-# KotlinPluginTemplate
+# ServerSetting Plugin
 
 
 > PaperMC 1.17.1
