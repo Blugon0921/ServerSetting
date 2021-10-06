@@ -10,6 +10,8 @@ import org.bukkit.event.player.PlayerJoinEvent
 import org.bukkit.event.player.PlayerQuitEvent
 import io.github.blugon0921.serversetting.ServerSetting.Companion.Replace
 import io.github.blugon0921.serversetting.ServerSetting.Companion.yaml
+import org.bukkit.entity.HumanEntity
+import org.bukkit.event.player.PlayerToggleSneakEvent
 
 class PlayerEvents : Listener {
 

@@ -23,7 +23,7 @@ dependencies {
 
 tasks {
     processResources {
-        filesMatching("*.yml") {
+        filesMatching("plugin.yml") {
             expand(project.properties)
         }
     }

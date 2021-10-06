@@ -6,6 +6,7 @@ import io.github.blugon0921.serversetting.events.ServerPingList
 import net.kyori.adventure.text.Component
 import net.md_5.bungee.api.ChatColor
 import org.bukkit.Bukkit
+import java.awt.Color
 import org.bukkit.configuration.file.YamlConfiguration
 import org.bukkit.event.Listener
 import org.bukkit.plugin.java.JavaPlugin
@@ -23,6 +24,7 @@ class ServerSetting : JavaPlugin(), Listener {
             var replaceMessage = replaceMessage
             val date = Date()
             replaceMessage = replaceMessage.replace("&", "§")
+            replaceMessage = replaceMessage.replace("%random%", ChatColor.of(Color((Math.random()*255).toInt(),(Math.random()*255).toInt(),(Math.random()*255).toInt())).toString()) //RandomColor
             replaceMessage = replaceMessage.replace("%version%", Bukkit.getServer().minecraftVersion) //Version
             replaceMessage = replaceMessage.replace("%years%", SimpleDateFormat("yyyy").format(date)) //Years
             replaceMessage = replaceMessage.replace("%month%", SimpleDateFormat("MM").format(date)) //Month
@@ -33,8 +35,6 @@ class ServerSetting : JavaPlugin(), Listener {
             return replaceMessage
         }
     }
-
-    private val startMotdText = ChatColor.AQUA.toString() + "plugins/Motd에 들어가서 config.yml을 수정해주세요"
 
 
     override fun onEnable() {
@@ -50,40 +50,21 @@ class ServerSetting : JavaPlugin(), Listener {
 
 
         Bukkit.getScheduler().scheduleSyncDelayedTask(this, { Bukkit.broadcast(Component.text("${ChatColor.GREEN}Reload Complate!")) }, 1)
-        save_Config()
+
+        if(!configFile.exists()) {
+            saveConfig()
+            config.options().copyDefaults(true)
+            saveConfig()
+        }
     }
 
 
     override fun onDisable() {
-        save_Config()
-        logger.info("Plugin Disable")
-    }
-
-
-
-
-    fun save_Config() {
-        if (!configFile.exists()) {
-            yaml.set("Motd.Motd1", "&7[&9Motd&7] $startMotdText")
-            yaml.set("Motd.Motd2", "&7[&9Motd&7] $startMotdText")
-            yaml.set("Motd.apply", true)
-
-            yaml.set("FakeVersion.FakeVersion", "&f%version%")
-            yaml.set("FakeVersion.apply", false)
-
-            yaml.set("ChatFormat.ChatFormat", "&f<%player%> %message%")
-            yaml.set("ChatFormat.apply", false)
-
-            yaml.set("FakeMaxPlayers.FakeMaxPlayers", Bukkit.getMaxPlayers())
-            yaml.set("FakeMaxPlayers.apply", false)
-
-            yaml.set("FakePlayers.FakePlayers", Bukkit.getOnlinePlayers().size)
-            yaml.set("FakePlayers.apply", false)
-
-            yaml.set("SystemMessage.JoinMessage", "&e%player% joined the game!")
-            yaml.set("SystemMessage.QuitMessage", "&e%player% leaved the game!")
-            yaml.set("SystemMessage.apply", true)
+        if(!configFile.exists()) {
+            saveConfig()
+            config.options().copyDefaults(true)
+            saveConfig()
         }
-        yaml.save(configFile)
+        logger.info("Plugin Disable")
     }
 }
