@@ -1,20 +1,20 @@
 Motd:
-  Motd1: '&7[&9Motd&7] §bplugins/Motd에 들어가서 config.yml을 수정해주세요'
-  Motd2: '&7[&9Motd&7] §bplugins/Motd에 들어가서 config.yml을 수정해주세요'
+  Motd1: '&7[&9Motd&7] &bplugins/Motd에 들어가서 config.yml을 수정해주세요'
+  Motd2: '&7[&9Motd&7] &bplugins/Motd에 들어가서 config.yml을 수정해주세요'
   apply: true
-FakeVersion:
-  FakeVersion: '&f%version%'
-  apply: false
 ChatFormat:
   ChatFormat: '&f<%player%> %message%'
+  apply: false
+SystemMessage:
+  JoinMessage: '&e%player% joined the game!'
+  QuitMessage: '&e%player% leaved the game!'
+  apply: false
+FakeVersion:
+  FakeVersion: '&f%version%'
   apply: false
 FakeMaxPlayers:
   FakeMaxPlayers: 100
   apply: false
 FakePlayers:
   FakePlayers: 0
-  apply: false
-SystemMessage:
-  JoinMessage: '&e%player% joined the game!'
-  QuitMessage: '&e%player% leaved the game!'
   apply: false

@@ -1,25 +1,38 @@
 plugins {
-    kotlin("jvm") version "1.5.30"
+    kotlin("jvm") version "1.6.0"
     id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
 group = "io.github.blugon0921"
-version = "1.0"
+version = "1.0.1"
+
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
 
 
 repositories {
     mavenCentral()
     maven("https://papermc.io/repo/repository/maven-public/")
-    maven("https://oss.sonatype.org/content/groups/public/")
+    maven("https://repo.projecttl.net/repository/maven-public/")
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.0")
+    compileOnly("io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT")
 
-    implementation("net.kyori:adventure-api:4.9.2")
+    implementation("net.kyori:adventure-api:4.9.3")
+    implementation("io.github.blugon09:PluginHelper:1.0.6-SNAPSHOT")
 }
 
+
 tasks {
+    compileKotlin {
+        kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+
     processResources {
         filesMatching("plugin.yml") {
             expand(project.properties)
@@ -27,17 +40,17 @@ tasks {
     }
 
     shadowJar {
-        from(sourceSets["main"].output)
-        archiveBaseName.set(project.name)
         archiveVersion.set("")
+        archiveBaseName.set(project.name)
         archiveFileName.set("${project.name}.jar")
+        from(sourceSets["main"].output)
 
         doLast {
             copy {
                 from(archiveFile)
 
-                //Save Location
-                val plugins = File("C:/Users/blugo/바탕화면/Files/Minecraft/Servers/asdf/plugins")
+                //Build Location
+                val plugins = File("C:/Files/Minecraft/Servers/Default/plugins")
                 into(plugins)
             }
         }
