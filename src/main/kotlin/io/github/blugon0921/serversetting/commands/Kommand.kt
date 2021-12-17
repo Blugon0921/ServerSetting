@@ -1,7 +1,10 @@
 package io.github.blugon0921.serversetting.commands
 
 import io.github.blugon09.pluginhelper.component.component
+import io.github.blugon0921.serversetting.ServerSetting
+import io.github.blugon0921.serversetting.ServerSetting.Companion.isReloadFile
 import io.github.blugon0921.serversetting.ServerSetting.Companion.isReloadYaml
+import io.github.blugon0921.serversetting.ServerSetting.Companion.saveSettingConfig
 import net.kyori.adventure.text.Component
 import net.md_5.bungee.api.ChatColor
 import org.bukkit.Bukkit
@@ -19,7 +22,8 @@ class Kommand : CommandExecutor,TabCompleter {
             if (sender.isOp) {
                 if (args.isNotEmpty()) return false
                 Bukkit.broadcast("${ChatColor.YELLOW}Reloading...".component())
-                isReloadYaml["isReload"] = true
+                isReloadYaml.set("isReload", true)
+                isReloadYaml.save(isReloadFile)
                 Bukkit.reload()
             } else {
                 sender.sendMessage("${ChatColor.RED}권한이 부족합니다.")

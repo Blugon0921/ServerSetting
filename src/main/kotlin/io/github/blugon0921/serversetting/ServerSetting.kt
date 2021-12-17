@@ -23,10 +23,10 @@ import java.util.*
 class ServerSetting : JavaPlugin(), Listener {
 
     companion object {
-        var configFile = File(ServerSetting().dataFolder, "config.yml")
+        var configFile = File("plugins/ServerSetting/config.yml")
         var yaml = YamlConfiguration.loadConfiguration(configFile)
 
-        var isReloadFile = File(ServerSetting().dataFolder, "isReload")
+        var isReloadFile = File("plugins/ServerSetting/isReload.yml")
         var isReloadYaml = YamlConfiguration.loadConfiguration(isReloadFile)
 
         fun saveSettingConfig() {
@@ -34,6 +34,11 @@ class ServerSetting : JavaPlugin(), Listener {
                 ServerSetting().saveConfig()
                 ServerSetting().config.options().copyDefaults(true)
                 ServerSetting().saveConfig()
+            }
+            if(!isReloadFile.exists()) {
+                isReloadYaml.save(isReloadFile)
+                isReloadYaml.set("isReload", false)
+                isReloadYaml.save(isReloadFile)
             }
         }
 
@@ -67,11 +72,13 @@ class ServerSetting : JavaPlugin(), Listener {
         saveSettingConfig()
 
         Bukkit.getScheduler().scheduleSyncDelayedTask(this, {
-            if(isReloadYaml["isReload"] == true) {
+            if(isReloadYaml.getBoolean("isReload")) {
                 Bukkit.broadcast("Reload Complate!".component().color(NamedTextColor.GREEN))
-                isReloadYaml["isReload"] = false
+                isReloadYaml.set("isReload", false)
+                isReloadYaml.save(isReloadFile)
             } else {
-                isReloadYaml["isReload"] = false
+                isReloadYaml.set("isReload", false)
+                isReloadYaml.save(isReloadFile)
             }
         }, 1)
     }
