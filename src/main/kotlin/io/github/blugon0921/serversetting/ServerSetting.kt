@@ -73,7 +73,11 @@ class ServerSetting : JavaPlugin(), Listener {
 
         Bukkit.getScheduler().scheduleSyncDelayedTask(this, {
             if(isReloadYaml.getBoolean("isReload")) {
-                Bukkit.broadcast("Reload Complate!".component().color(NamedTextColor.GREEN))
+                Bukkit.getConsoleSender().sendMessage("Reload Complate!".component().color(NamedTextColor.GREEN))
+                for(players in Bukkit.getOnlinePlayers()) {
+                    if(!players.isOp) continue
+                    players.sendMessage("Reload Complate!".component().color(NamedTextColor.GREEN))
+                }
                 isReloadYaml.set("isReload", false)
                 isReloadYaml.save(isReloadFile)
             } else {

@@ -6,6 +6,7 @@ import io.github.blugon0921.serversetting.ServerSetting.Companion.isReloadFile
 import io.github.blugon0921.serversetting.ServerSetting.Companion.isReloadYaml
 import io.github.blugon0921.serversetting.ServerSetting.Companion.saveSettingConfig
 import net.kyori.adventure.text.Component
+import net.kyori.adventure.text.format.NamedTextColor
 import net.md_5.bungee.api.ChatColor
 import org.bukkit.Bukkit
 import org.bukkit.command.Command
@@ -21,7 +22,11 @@ class Kommand : CommandExecutor,TabCompleter {
         if (command.name == "load") {
             if (sender.isOp) {
                 if (args.isNotEmpty()) return false
-                Bukkit.broadcast("${ChatColor.YELLOW}Reloading...".component())
+                Bukkit.getConsoleSender().sendMessage("${ChatColor.YELLOW}Reloading...".component())
+                for(players in Bukkit.getOnlinePlayers()) {
+                    if(!players.isOp) continue
+                    players.sendMessage("${ChatColor.YELLOW}Reloading...".component())
+                }
                 isReloadYaml.set("isReload", true)
                 isReloadYaml.save(isReloadFile)
                 Bukkit.reload()
