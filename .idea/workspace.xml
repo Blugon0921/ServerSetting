@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad7abaf-7186-4542-af18-9ef0a595ae28" name="변경" comment="✨ 코드 최적화">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5ad7abaf-7186-4542-af18-9ef0a595ae28" name="변경" comment="✨ 1.0.2 - 버그 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ServerSetting.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ServerSetting.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/blugon0921/serversetting/ServerSetting.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/blugon0921/serversetting/ServerSetting.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/blugon0921/serversetting/commands/Kommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/blugon0921/serversetting/commands/Kommand.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +134,8 @@
       <workItem from="1639728792368" duration="1240000" />
       <workItem from="1639730059516" duration="4108000" />
       <workItem from="1639820287759" duration="625000" />
-      <workItem from="1641080699171" duration="247000" />
+      <workItem from="1641080699171" duration="693000" />
+      <workItem from="1644973361662" duration="683000" />
     </task>
     <task id="LOCAL-00001" summary="✨ 코드 최적화">
       <created>1639730096640</created>
@@ -183,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639733790977</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="✨ 1.0.2 - 버그 수정">
+      <created>1641081029058</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641081029058</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +205,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="✨ 코드 최적화" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ 코드 최적화" />
+    <MESSAGE value="✨ 1.0.2 - 버그 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ 1.0.2 - 버그 수정" />
   </component>
 </project>

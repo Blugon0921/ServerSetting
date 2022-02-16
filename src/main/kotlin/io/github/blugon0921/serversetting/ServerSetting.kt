@@ -43,18 +43,18 @@ class ServerSetting : JavaPlugin(), Listener {
         }
 
         fun String.effect() : String {
-            var replace = this
+            var string = this
             val date = Date()
-            replace = replace.replace("&", "§")
-            replace = replace.replace("%random%", ChatColor.of(Color((Math.random()*255).toInt(),(Math.random()*255).toInt(),(Math.random()*255).toInt())).toString()) //RandomColor
-            replace = replace.replace("%version%", Bukkit.getServer().minecraftVersion) //Version
-            replace = replace.replace("%years%", SimpleDateFormat("yyyy").format(date)) //Years
-            replace = replace.replace("%month%", SimpleDateFormat("MM").format(date)) //Month
-            replace = replace.replace("%day%", SimpleDateFormat("dd").format(date)) //Days
-            replace = replace.replace("%hour%", SimpleDateFormat("HH").format(date)) //Hour
-            replace = replace.replace("%minute%", SimpleDateFormat("mm").format(date)) //Minutes
-            replace = replace.replace("%second%", SimpleDateFormat("ss").format(date)) //Seconds
-            return replace
+            string = string.replace("&", "§")
+            string = string.replace("%random%", ChatColor.of(Color((Math.random()*255).toInt(),(Math.random()*255).toInt(),(Math.random()*255).toInt())).toString()) //RandomColor
+            string = string.replace("%version%", Bukkit.getServer().minecraftVersion) //Version
+            string = string.replace("%years%", SimpleDateFormat("yyyy").format(date)) //Years
+            string = string.replace("%month%", SimpleDateFormat("MM").format(date)) //Month
+            string = string.replace("%day%", SimpleDateFormat("dd").format(date)) //Days
+            string = string.replace("%hour%", SimpleDateFormat("HH").format(date)) //Hour
+            string = string.replace("%minute%", SimpleDateFormat("mm").format(date)) //Minutes
+            string = string.replace("%second%", SimpleDateFormat("ss").format(date)) //Seconds
+            return string
         }
     }
 
