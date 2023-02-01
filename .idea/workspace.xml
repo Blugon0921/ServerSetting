@@ -4,25 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ebc5ba6-adc3-467d-88ea-6de5556673e9" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ServerSetting.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ServerSetting.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ServerSetting.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ServerSetting.test.iml" afterDir="false" />
+    <list default="true" id="7ebc5ba6-adc3-467d-88ea-6de5556673e9" name="변경" comment="✨ 1.0.4 - Apply Kommand">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/kr/blugon/serversetting/ServerSetting.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/kr/blugon/serversetting/ServerSetting.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/kr/blugon/serversetting/commands/Comand.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/kr/blugon/serversetting/events/PlayerEvents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/kr/blugon/serversetting/events/PlayerEvents.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/kr/blugon/serversetting/events/ServerPingList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/kr/blugon/serversetting/events/ServerPingList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -422,8 +405,16 @@
       <workItem from="1675236678315" duration="4511000" />
       <workItem from="1675241285921" duration="8433000" />
       <workItem from="1675250263380" duration="410000" />
-      <workItem from="1675250715935" duration="163000" />
+      <workItem from="1675250715935" duration="236000" />
     </task>
+    <task id="LOCAL-00001" summary="✨ 1.0.4 - Apply Kommand">
+      <created>1675250935105</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675250935105</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,6 +434,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="✨ 1.0.4 - Apply Kommand" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ 1.0.4 - Apply Kommand" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
