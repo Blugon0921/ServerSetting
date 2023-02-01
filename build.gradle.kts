@@ -1,10 +1,10 @@
 plugins {
-    kotlin("jvm") version "1.6.0"
+    kotlin("jvm") version "1.8.0"
     id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
-group = "io.github.blugon0921"
-version = "1.0.2"
+group = "kr.blugon"
+version = "1.0.3"
 
 
 java {
@@ -16,15 +16,11 @@ java {
 repositories {
     mavenCentral()
     maven("https://papermc.io/repo/repository/maven-public/")
-    maven("https://repo.projecttl.net/repository/maven-public/")
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.0")
-    compileOnly("io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT")
-
-    implementation("net.kyori:adventure-api:4.9.3")
-    implementation("io.github.blugon09:PluginHelper:1.0.6-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT")
+    implementation("io.github.monun:kommand-api:3.0.0")
 }
 
 

@@ -1,18 +1,16 @@
-package io.github.blugon0921.serversetting.events
+package kr.blugon.serversetting.events
 
-import io.github.blugon0921.serversetting.ServerSetting
+import kr.blugon.serversetting.ServerSetting
 import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
-import io.github.blugon0921.serversetting.ServerSetting.Companion.effect
-import io.github.blugon0921.serversetting.ServerSetting.Companion.yaml
+import kr.blugon.serversetting.ServerSetting.Companion.effect
+import kr.blugon.serversetting.ServerSetting.Companion.yaml
 import org.bukkit.entity.HumanEntity
 import org.bukkit.event.player.*
 
 class PlayerEvents : Listener {
-
-
     @EventHandler
     fun chatFormat(event: PlayerChatEvent) {
         if (yaml.getBoolean("ChatFormat.apply")) {

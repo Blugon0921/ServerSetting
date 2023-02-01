@@ -1,17 +1,15 @@
-package io.github.blugon0921.serversetting.events
+package kr.blugon.serversetting.events
 
 import com.destroystokyo.paper.event.server.PaperServerListPingEvent
-import io.github.blugon09.pluginhelper.component.component
-import net.kyori.adventure.text.Component
+import kr.blugon.serversetting.ServerSetting.Companion.effect
+import kr.blugon.serversetting.ServerSetting.Companion.yaml
+import net.kyori.adventure.text.Component.text
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import java.util.*
-import io.github.blugon0921.serversetting.ServerSetting.Companion.effect
-import io.github.blugon0921.serversetting.ServerSetting.Companion.yaml
 
 class ServerPingList : Listener {
-
     @EventHandler
     fun SetMotd(event: PaperServerListPingEvent) {
         //MOTD
@@ -20,10 +18,8 @@ class ServerPingList : Listener {
             var motd2 = yaml.getString("Motd.Motd2")
             if(motd1 == null) motd1 = ""
             if(motd2 == null) motd2 = ""
-            motd1 = motd1.effect()
-            motd2 = motd2.effect()
 
-            event.motd("${motd1}\n$motd2".component())
+            event.motd(text("${motd1}\n${motd2}".effect()))
         }
 
         //FakeVersion
