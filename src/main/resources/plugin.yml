@@ -1,12 +1,7 @@
 name: ${project.name}
 version: ${project.version}
-main: kr.blugon.${project.name.toLowerCase()}.${project.name}
-api-version: 1.17
+main: ${project.group}.${project.name.toLowerCase()}.${project.name}
+api-version: 1.19
 author: Blugon
 libraries:
   - io.github.monun:kommand-core:3.0.0
-
-commands:
-  load:
-    description: Simple Reload Command
-    permission: serversetting.reload

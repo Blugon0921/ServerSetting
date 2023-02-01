@@ -1,6 +1,5 @@
 package kr.blugon.serversetting
 
-import kr.blugon.serversetting.commands.Comand
 import kr.blugon.serversetting.events.PlayerEvents
 import kr.blugon.serversetting.events.ServerPingList
 import net.kyori.adventure.text.Component.text
@@ -15,7 +14,8 @@ import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
 
-class ServerSetting : JavaPlugin(), Listener {
+
+class ServerSetting : JavaPlugin(),Listener {
 
     companion object {
         var configFile = File("plugins/ServerSetting/config.yml")
@@ -55,15 +55,11 @@ class ServerSetting : JavaPlugin(), Listener {
         }
     }
 
-
     override fun onEnable() {
         logger.info("Plugin Enable")
-        Bukkit.getPluginManager().registerEvents(this, this)
-        Bukkit.getPluginManager().registerEvents(ServerPingList(), this)
         Bukkit.getPluginManager().registerEvents(PlayerEvents(), this)
-
-        saveSettingConfig()
-        Comand(this)
+        Bukkit.getPluginManager().registerEvents(ServerPingList(), this)
+        LoadCommand(this)
 
         Bukkit.getScheduler().scheduleSyncDelayedTask(this, {
             if(isReloadYaml.getBoolean("isReload")) {
@@ -80,7 +76,6 @@ class ServerSetting : JavaPlugin(), Listener {
             }
         }, 1)
     }
-
 
     override fun onDisable() {
         logger.info("Plugin Disable")

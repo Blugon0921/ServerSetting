@@ -1,10 +1,10 @@
 plugins {
     kotlin("jvm") version "1.8.0"
-    id("com.github.johnrengelman.shadow") version "7.0.0"
+    id("com.github.johnrengelman.shadow") version "7.1.1"
 }
 
 group = "kr.blugon"
-version = "1.0.3"
+version = "1.0.4"
 
 
 java {
@@ -15,6 +15,7 @@ java {
 
 repositories {
     mavenCentral()
+    mavenLocal()
     maven("https://papermc.io/repo/repository/maven-public/")
 }
 
@@ -36,7 +37,26 @@ tasks {
     }
 
     shadowJar {
-        archiveVersion.set("")
+        archiveVersion.set(project.version.toString())
+        archiveBaseName.set(project.name)
+        archiveFileName.set("${project.name}.jar")
+        from(sourceSets["main"].output)
+
+        doLast {
+            copy {
+                from(archiveFile)
+
+                //Build Location
+//                val plugins = File("C:/Files/Minecraft/Servers/Default/plugins")
+                val plugins = File("C:/Files/Minecraft/Servers/Captive/plugins")
+//                val plugins = File("C:/Users/blugo/Desktop")
+                into(plugins)
+            }
+        }
+    }
+
+    jar {
+        archiveVersion.set(project.version.toString())
         archiveBaseName.set(project.name)
         archiveFileName.set("${project.name}.jar")
         from(sourceSets["main"].output)
@@ -47,6 +67,7 @@ tasks {
 
                 //Build Location
                 val plugins = File("C:/Files/Minecraft/Servers/Default/plugins")
+//                val plugins = File("C:/Users/blugo/Desktop")
                 into(plugins)
             }
         }
