@@ -4,8 +4,8 @@ plugins {
 }
 
 group = "kr.blugon"
-version = "1.0.4"
-
+version = "1.0.5"
+val buildPath = File("C:/Files/Minecraft/Servers/\$plugins")
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -17,11 +17,13 @@ repositories {
     mavenCentral()
     mavenLocal()
     maven("https://papermc.io/repo/repository/maven-public/")
+    maven("https://jitpack.io/")
 }
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT")
     implementation("io.github.monun:kommand-api:3.0.0")
+    implementation("kr.blugon:PluginHelper:1.0.1")
 }
 
 
@@ -47,10 +49,7 @@ tasks {
                 from(archiveFile)
 
                 //Build Location
-//                val plugins = File("C:/Files/Minecraft/Servers/Default/plugins")
-                val plugins = File("C:/Files/Minecraft/Servers/Captive/plugins")
-//                val plugins = File("C:/Users/blugo/Desktop")
-                into(plugins)
+                into(buildPath)
             }
         }
     }
@@ -66,9 +65,7 @@ tasks {
                 from(archiveFile)
 
                 //Build Location
-                val plugins = File("C:/Files/Minecraft/Servers/Default/plugins")
-//                val plugins = File("C:/Users/blugo/Desktop")
-                into(plugins)
+                into(buildPath)
             }
         }
     }
