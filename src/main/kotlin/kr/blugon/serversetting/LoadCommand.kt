@@ -12,12 +12,12 @@ import java.util.*
 
 class LoadCommand(plugin : JavaPlugin) : CommandExecutor, TabCompleter {
 
-    override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>?): Boolean {
+    override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
         if(!sender.isOp) {
             sender.sendMessage(Component.text("권한이 없습니다.").color(NamedTextColor.RED))
             return false
         }
-        if(args != null) {
+        if(args.isNotEmpty()) {
             sender.sendMessage(Component.text("인수가 많습니다.").color(NamedTextColor.RED))
         }
         Bukkit.getConsoleSender().sendMessage(
