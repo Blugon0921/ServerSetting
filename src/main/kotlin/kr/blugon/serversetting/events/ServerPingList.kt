@@ -11,7 +11,7 @@ import java.util.*
 
 class ServerPingList : Listener {
     @EventHandler
-    fun SetMotd(event: PaperServerListPingEvent) {
+    fun setMotd(event: PaperServerListPingEvent) {
         //MOTD
         if (ServerSetting.yaml.getBoolean("Motd.apply")) {
             var motd1 = ServerSetting.yaml.getString("Motd.Motd1")

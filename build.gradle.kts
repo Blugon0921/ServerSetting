@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "kr.blugon"
-version = "1.0.5"
+version = "1.0.6"
 val buildPath = File("C:/Files/Minecraft/Servers/\$plugins")
 
 java {
@@ -21,8 +21,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT")
-    implementation("io.github.monun:kommand-api:3.0.0")
+    compileOnly("io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
     implementation("kr.blugon:PluginHelper:1.0.1")
 }
 

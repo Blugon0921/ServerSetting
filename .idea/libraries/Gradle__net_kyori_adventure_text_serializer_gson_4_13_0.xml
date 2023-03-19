@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.kyori:adventure-text-serializer-gson:4.13.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-gson/4.13.0/58d60201aa67094fc1afa512f35de5dd0059c61e/adventure-text-serializer-gson-4.13.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-gson/4.13.0/273c5667dc80cae28a4643e69c818649c7d7a86/adventure-text-serializer-gson-4.13.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

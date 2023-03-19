@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.papermc.paper/paper-api/1.19.3-R0.1-SNAPSHOT/519eee28b0dab54b17e33a4c087bfa957ea82366/paper-api-1.19.3-R0.1-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.papermc.paper/paper-api/1.19.3-R0.1-SNAPSHOT/e7ec7a0ef784f6bf67244c6908c4128721ec8b47/paper-api-1.19.3-R0.1-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.papermc.paper/paper-api/1.19.3-R0.1-SNAPSHOT/de56a57d06e4a7e044cdc290a14b6e7ab2e5ea01/paper-api-1.19.3-R0.1-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.papermc.paper/paper-api/1.19.3-R0.1-SNAPSHOT/1ab976420681aeac34f4a463cfa13a0d63c3f0d8/paper-api-1.19.3-R0.1-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

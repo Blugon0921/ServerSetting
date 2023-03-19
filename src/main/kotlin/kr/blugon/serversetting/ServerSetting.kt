@@ -59,7 +59,10 @@ class ServerSetting : JavaPlugin(),Listener {
         logger.info("Plugin Enable")
         Bukkit.getPluginManager().registerEvents(PlayerEvents(), this)
         Bukkit.getPluginManager().registerEvents(ServerPingList(), this)
-        LoadCommand(this)
+        getCommand("load")!!.apply {
+            setExecutor(LoadCommand(this@ServerSetting))
+            tabCompleter = LoadCommand(this@ServerSetting)
+        }
 
         Bukkit.getScheduler().scheduleSyncDelayedTask(this, {
             if(isReloadYaml.getBoolean("isReload")) {

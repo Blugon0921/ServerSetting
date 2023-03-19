@@ -24,7 +24,7 @@ class PlayerEvents : Listener {
     }
 
     @EventHandler
-    fun SystemMessage(event: PlayerJoinEvent) {
+    fun playerJoin(event: PlayerJoinEvent) {
         if (ServerSetting.yaml.getBoolean("SystemMessage.apply")) {
             var message = ServerSetting.yaml.getString("SystemMessage.JoinMessage") ?: return
             message = message.effect()
@@ -34,7 +34,7 @@ class PlayerEvents : Listener {
     }
 
     @EventHandler
-    fun SystemMessage(event: PlayerQuitEvent) {
+    fun playerQuit(event: PlayerQuitEvent) {
         if (ServerSetting.yaml.getBoolean("SystemMessage.apply")) {
             var message = ServerSetting.yaml.getString("SystemMessage.QuitMessage") ?: return
             message = message.effect()
