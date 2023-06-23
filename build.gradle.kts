@@ -1,30 +1,33 @@
 plugins {
-    kotlin("jvm") version "1.8.0"
-    id("com.github.johnrengelman.shadow") version "7.1.1"
+    kotlin("jvm") version "1.8.21"
 }
-
-group = "kr.blugon"
-version = "1.0.6"
-val buildPath = File("C:/Files/Minecraft/Servers/\$plugins")
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
 }
 
+val buildPath = File("C:/Files/Minecraft/Servers/\$plugins")
+val mcVersion = "1.20.1"
+val kotlinVersion = kotlin.coreLibrariesVersion
 
 repositories {
     mavenCentral()
-    mavenLocal()
     maven("https://papermc.io/repo/repository/maven-public/")
-    maven("https://jitpack.io/")
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
-    implementation("kr.blugon:PluginHelper:1.0.1")
+    implementation(kotlin("stdlib"))
+    compileOnly("io.papermc.paper:paper-api:${mcVersion}-R0.1-SNAPSHOT")
 }
 
+extra.apply {
+    set("ProjectName", project.name)
+    set("ProjectVersion", project.version)
+    set("KotlinVersion", kotlinVersion)
+    set("MinecraftVersion", mcVersion.split(".").subList(0, 2).joinToString("."))
+}
 
 tasks {
     compileKotlin {
@@ -34,37 +37,20 @@ tasks {
     processResources {
         filesMatching("plugin.yml") {
             expand(project.properties)
+            expand(extra.properties)
         }
     }
 
-    shadowJar {
-        archiveVersion.set(project.version.toString())
-        archiveBaseName.set(project.name)
-        archiveFileName.set("${project.name}.jar")
+    create<Jar>("buildPaper") {
+        archiveBaseName.set(project.name) //Project Name
+        archiveFileName.set("${project.name}.jar") //Build File Name
+        archiveVersion.set(project.version.toString()) //Version
         from(sourceSets["main"].output)
 
         doLast {
             copy {
-                from(archiveFile)
-
-                //Build Location
-                into(buildPath)
-            }
-        }
-    }
-
-    jar {
-        archiveVersion.set(project.version.toString())
-        archiveBaseName.set(project.name)
-        archiveFileName.set("${project.name}.jar")
-        from(sourceSets["main"].output)
-
-        doLast {
-            copy {
-                from(archiveFile)
-
-                //Build Location
-                into(buildPath)
+                from(archiveFile) //Copy from
+                into(buildPath) //Copy to
             }
         }
     }
