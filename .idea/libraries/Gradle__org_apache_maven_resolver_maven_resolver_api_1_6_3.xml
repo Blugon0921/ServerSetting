@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: org.apache.maven.resolver:maven-resolver-api:1.6.3">
+  <library name="Gradle: org.apache.maven.resolver:maven-resolver-api:1.6.3" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-api/1.6.3/5ee235aa5ac5994b5dc847f8e78ffe9d77dd55d7/maven-resolver-api-1.6.3.jar!/" />
     </CLASSES>

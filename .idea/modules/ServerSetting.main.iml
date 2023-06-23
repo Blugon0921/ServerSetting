@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="ServerSetting:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="kr.blugon" external.system.module.type="sourceSet" external.system.module.version="1.0.6" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="ServerSetting:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="kr.blugon" external.system.module.type="sourceSet" external.system.module.version="1.1.0" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="minecraft" name="Minecraft">
       <configuration>
@@ -9,7 +9,7 @@
         </autoDetectTypes>
       </configuration>
     </facet>
-    <facet type="kotlin-language" name="Kotlin">
+    <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
       <configuration version="5" platform="JVM 17" allPlatforms="JVM [17]" useProjectSettings="false">
         <compilerSettings>
           <option name="additionalArguments" value="-Xallow-no-source-files" />
@@ -22,22 +22,20 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.0/ed04f49e186a116753ad70d34f0ac2925d1d8020/kotlin-stdlib-jdk8-1.8.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.papermc.paper/paper-api/1.19.4-R0.1-SNAPSHOT/ecf8c25cae3765c5a1e459ea52128c522cbd9210/paper-api-1.19.4-R0.1-SNAPSHOT.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/kr.blugon/PluginHelper/1.0.1/e8751db3320074642aa30faac01157dea06cd6e6/PluginHelper-1.0.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.0/3c91271347f678c239607abb676d4032a7898427/kotlin-stdlib-jdk7-1.8.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.0/1796921c7a3e2e2665a83e6c8d33399336cd39bc/kotlin-stdlib-1.8.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.papermc.paper/paper-api/1.20.1-R0.1-SNAPSHOT/2e67fc68c0fb7528cd3facd250a8047aacce81fc/paper-api-1.20.1-R0.1-SNAPSHOT.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.21/43d50ab85bc7587adfe3dda3dbe579e5f8d51265/kotlin-stdlib-1.8.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-chat/1.16-R0.4-deprecated+build.9/34a32cc95e1c5f12176cf0a8aeeff087ff8a17e0/bungeecord-chat-1.16-R0.4-deprecated+build.9.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/60458f877d055d0c9114d9e1a2efb737b4bc282c/guava-31.1-jre.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-logger-slf4j/4.13.0/3343eccc11a4d27bda90d8dcf4d4dec198f09e7a/adventure-text-logger-slf4j-4.13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-minimessage/4.13.0/e148b2f90673369c545dc4affbb751fb1bf5cf8f/adventure-text-minimessage-4.13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-legacy/4.13.0/7d19c74d574e5a0fba65668f562c9f767132fd35/adventure-text-serializer-legacy-4.13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-plain/4.13.0/5b12c1eb43979e14af5e7246402765dd287644f2/adventure-text-serializer-plain-4.13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-api/4.13.0/8c96bc2c4dd2f412446d327522b42525e484fb29/adventure-api-4.13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-key/4.13.0/ddf8a8faf13659c087850bf0d633e24f47423255/adventure-key-4.13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-gson/4.13.0/58d60201aa67094fc1afa512f35de5dd0059c61e/adventure-text-serializer-gson-4.13.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-logger-slf4j/4.14.0/dbaf0c74d4a968b010eb9accfc9829c5eeacb8fe/adventure-text-logger-slf4j-4.14.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-minimessage/4.14.0/323fdce4c3123c1e5fd31cb4d9c54cd08df6e93e/adventure-text-minimessage-4.14.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-legacy/4.14.0/d35758e445d7f42b60d1f4cb023e1395a9093dc5/adventure-text-serializer-legacy-4.14.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-plain/4.14.0/40ef21a25514b5c98b25e6feb353f51a17dddae2/adventure-text-serializer-plain-4.14.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-json/4.14.0/5b4913594c499d4dbf8aed17bca6d65fbca39e41/adventure-text-serializer-json-4.14.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-api/4.14.0/e8f089092c77caaa0b0fce9ee7c309200437f9e1/adventure-api-4.14.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-key/4.14.0/ad2efeebd026dabceec32e31573c62e0188d7aeb/adventure-key-4.14.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-gson/4.14.0/8fa5e6b7caadae923b0cd0a9c78d5128a4bff1e0/adventure-text-serializer-gson-4.14.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10/dd9b193aef96e973d5a11ab13cd17430c2e4306b/gson-2.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.33/2cd0a87ff7df953f810c344bdf2fe3340b954c69/snakeyaml-1.33.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.0/3aab2116756442bf0d4cd1c089b24d34c3baa253/snakeyaml-2.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/22566d58af70ad3d72308bab63b8339906deb649/joml-1.10.5.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.6/76f95700418a68fbc4ac050525261f05dc681ca1/fastutil-8.5.6.jar</arg>
@@ -46,7 +44,7 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-impl/1.6.3/2714ffe60bd71259a41b3e4816122504b5f2db93/maven-resolver-impl-1.6.3.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.8.0-beta4/83b0359d847ee053d745be7ec0d8e9e8a44304b4/slf4j-api-1.8.0-beta4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.21.0/55aaf38ec65c7aee19697257d644493c06dee1fe/checker-qual-3.21.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.0/f7197e7cc76453ac59f8b0f8d5137cc600becd36/kotlin-stdlib-common-1.8.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.21/d749cd5ae25da36d06e5028785038e24f9d37976/kotlin-stdlib-common-1.8.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/examination-string/1.3.0/6f34afef5c54ccce4996bc321abf77518b55b4bd/examination-string-1.3.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.kyori/examination-api/1.3.0/8a2d185275307f1e2ef2adf7152b9a0d1d44c30b/examination-api-1.3.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/24.0.1/13c5c75c4206580aa4d683bffee658caae6c9f43/annotations-24.0.1.jar</arg>
@@ -80,12 +78,12 @@
             <arrayArg name="friendPaths" />
             <arrayArg name="pluginClasspaths">
               <args>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.8.0/1f7345b3fc46786c1f36a4ba0728a95990d05929/kotlin-scripting-jvm-1.8.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.8.0/ffeb4c0c2b3978876b993d6b55646e6b567077a8/kotlin-scripting-common-1.8.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.0/1796921c7a3e2e2665a83e6c8d33399336cd39bc/kotlin-stdlib-1.8.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.0/f7197e7cc76453ac59f8b0f8d5137cc600becd36/kotlin-stdlib-common-1.8.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.8.21/b532e6495c5cb85a2f73a4db4ae98f292ea1d30f/kotlin-scripting-jvm-1.8.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.8.21/18a869ce1cc76c771d7e3f0a2604f1a32127b558/kotlin-scripting-common-1.8.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.21/43d50ab85bc7587adfe3dda3dbe579e5f8d51265/kotlin-stdlib-1.8.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.21/d749cd5ae25da36d06e5028785038e24f9d37976/kotlin-stdlib-common-1.8.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.8.0/b2f7e760d283cb339974851c222a4c1d48f2d3d/kotlin-script-runtime-1.8.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.8.21/bf43f76b6e29bdc09b6c8a4511a9118b0ab12b1f/kotlin-script-runtime-1.8.21.jar</arg>
               </args>
             </arrayArg>
             <arrayArg name="pluginOptions" />
@@ -103,65 +101,50 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Gradle: kr.blugon:PluginHelper:1.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.21" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: net.md-5:bungeecord-chat:1.16-R0.4-deprecated+build.9" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.guava:guava:31.1-jre" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-logger-slf4j:4.13.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-minimessage:4.13.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-serializer-legacy:4.13.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-serializer-plain:4.13.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-api:4.13.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-serializer-gson:4.13.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.10" level="project" />
-    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.33" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.guava:guava:31.1-jre" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-logger-slf4j:4.14.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-minimessage:4.14.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-serializer-legacy:4.14.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-serializer-plain:4.14.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-api:4.14.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-serializer-gson:4.14.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.code.gson:gson:2.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.yaml:snakeyaml:2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.joml:joml:1.10.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: it.unimi.dsi:fastutil:8.5.6" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.17.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.maven:maven-resolver-provider:3.8.5" level="project" />
-    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.8.0-beta4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: it.unimi.dsi:fastutil:8.5.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.logging.log4j:log4j-api:2.17.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.maven:maven-resolver-provider:3.8.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.slf4j:slf4j-api:1.8.0-beta4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.checkerframework:checker-qual:3.21.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.21" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains:annotations:24.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.guava:failureaccess:1.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.errorprone:error_prone_annotations:2.11.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.j2objc:j2objc-annotations:1.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-key:4.13.0" level="project" />
-    <orderEntry type="library" name="Gradle: net.kyori:examination-string:1.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: net.kyori:examination-api:1.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.maven.resolver:maven-resolver-impl:1.6.3" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.maven:maven-model-builder:3.8.5" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.maven:maven-model:3.8.5" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.maven:maven-repository-metadata:3.8.5" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.maven.resolver:maven-resolver-spi:1.6.3" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.maven.resolver:maven-resolver-util:1.6.3" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.maven.resolver:maven-resolver-api:1.6.3" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.plexus:plexus-utils:3.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.8.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.maven:maven-artifact:3.8.5" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.plexus:plexus-interpolation:1.26" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.maven:maven-builder-support:3.8.5" level="project" />
-    <orderEntry type="library" name="Gradle: org.eclipse.sisu:org.eclipse.sisu.inject:0.3.5" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.guava:failureaccess:1.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.errorprone:error_prone_annotations:2.11.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.j2objc:j2objc-annotations:1.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-key:4.14.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:examination-string:1.3.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:examination-api:1.3.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.kyori:adventure-text-serializer-json:4.14.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.maven.resolver:maven-resolver-impl:1.6.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.maven:maven-model-builder:3.8.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.maven:maven-model:3.8.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.maven:maven-repository-metadata:3.8.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.maven.resolver:maven-resolver-spi:1.6.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.maven.resolver:maven-resolver-util:1.6.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.maven.resolver:maven-resolver-api:1.6.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.codehaus.plexus:plexus-utils:3.3.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.commons:commons-lang3:3.8.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.maven:maven-artifact:3.8.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.codehaus.plexus:plexus-interpolation:1.26" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.maven:maven-builder-support:3.8.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.eclipse.sisu:org.eclipse.sisu.inject:0.3.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.ow2.asm:asm-commons:9.4" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.ow2.asm:asm:9.4" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.md-5:bungeecord-chat:1.16-R0.4-deprecated+build.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.kyori:adventure-text-logger-slf4j:4.12.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.kyori:adventure-text-minimessage:4.12.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.kyori:adventure-text-serializer-legacy:4.12.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.kyori:adventure-text-serializer-plain:4.12.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.kyori:adventure-api:4.12.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.kyori:adventure-text-serializer-gson:4.12.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.ow2.asm:asm-tree:9.4" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.checkerframework:checker-qual:3.12.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.kyori:adventure-key:4.12.0" level="project" />
   </component>
 </module>
