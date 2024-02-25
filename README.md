@@ -11,31 +11,31 @@
 ## Config Tags
 
 
-&0 - <span style="color:black">Black Color</span><br/>
-&1 - <span style="color:blue">Dark Blue Color</span><br/>
-&2 - <span style="color:green">Dark Green Color</span><br/>
-&3 - <span style="color:darkcyan">Dark Aqua Color</span><br/>
-&4 - <span style="color:darkred">Dark Red Color</span><br/>
-&5 - <span style="color:purple">Dark Purple Color</span><br/>
-&6 - <span style="color:gold">Gold Color</span><br/>
-&7 - <span style="color:darkgray">Gray Color</span><br/>
-&8 - <span style="color:gray">Dark Gray Color</span><br/>
-&9 - <span style="color:#5454fb">Blue Color</span><br/>
-&a - <span style="color:#54fb54">Green Color</span><br/>
-&b - <span style="color:aqua">Aqua Color</span><br/>
-&c - <span style="color:#fb5454">Red Color</span><br/>
-&d - <span style="color:#fb54fb">Light Purple Color</span><br/>
-&e - <span style="color:yellow">Yellow Color</span><br/>
-&f - <span style="color:white">White Color</span><br/>
+&0 - Black Color<br/>
+&1 - Dark Blue Color<br/>
+&2 - Dark Green Color<br/>
+&3 - Dark Aqua Color<br/>
+&4 - Dark Red Color<br/>
+&5 - Dark Purple Color<br/>
+&6 - Gold Color<br/>
+&7 - Gray Color<br/>
+&8 - Dark Gray Color<br/>
+&9 - Blue Color<br/>
+&a - Green Color<br/>
+&b - Aqua Color<br/>
+&c - Red Color<br/>
+&d - Light Purple Color<br/>
+&e - Yellow Color<br/>
+&f - White Color<br/>
 &k - Obfuscated<br/>
-&l - <strong>Bold</strong><br/>
-&m - <span style="text-decoration:line-through">Strikethrough</span><br/>
-&n - <span style="text-decoration:underline">Underline</span><br/>
-&o - <span style="font-style:italic">Italic</span><br/>
-&r - <span style="color:white">RESET</span><br/>
+&l - **Bold**<br/>
+&m - ~~Strikethrough~~<br/>
+&n - Underline<br/>
+&o - *Italic*<br/>
+&r - white">RESET<br/>
 <<color:#000000>> - Hex Code<br/>
 
-%random% - <span style="color:red">Ra</span><span style="color:orange">nd</span><span style="color:gold">om</span><span style="color:lime"> Co</span><span style="color:blue">lo</span><span style="color:purple">r</span><br/>
+%random% - red">Raorange">ndgold">omlime"> Coblue">lopurple">r<br/>
 %version% - Minecraft Version (X.XX.X)<br/>
 %year% - Now year (XXXX)<br/>
 %month% - Now month (XX)<br/>
