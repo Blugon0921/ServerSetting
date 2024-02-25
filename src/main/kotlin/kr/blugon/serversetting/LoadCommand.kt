@@ -1,6 +1,7 @@
 package kr.blugon.serversetting
 
 import net.kyori.adventure.text.Component
+import net.kyori.adventure.text.Component.text
 import net.kyori.adventure.text.format.NamedTextColor
 import org.bukkit.Bukkit
 import org.bukkit.command.Command
@@ -14,18 +15,18 @@ class LoadCommand(plugin : JavaPlugin) : CommandExecutor, TabCompleter {
 
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
         if(!sender.isOp) {
-            sender.sendMessage(Component.text("권한이 없습니다.").color(NamedTextColor.RED))
+            sender.sendMessage(text("권한이 부족합니다").color(NamedTextColor.RED))
             return false
         }
         if(args.isNotEmpty()) {
-            sender.sendMessage(Component.text("인수가 많습니다.").color(NamedTextColor.RED))
+            sender.sendMessage(text("인수가 많습니다").color(NamedTextColor.RED))
+            return false
         }
         Bukkit.getConsoleSender().sendMessage(
-            Component.text("Reloading...")
-                .color(NamedTextColor.YELLOW))
+            text("Reloading...").color(NamedTextColor.YELLOW))
         for(players in Bukkit.getOnlinePlayers()) {
             if(!players.isOp) continue
-            players.sendMessage(Component.text("Reloading...").color(NamedTextColor.YELLOW))
+            players.sendMessage(text("Reloading...").color(NamedTextColor.YELLOW))
         }
         ServerSetting.isReloadYaml.set("isReload", true)
         ServerSetting.isReloadYaml.save(ServerSetting.isReloadFile)
@@ -33,7 +34,7 @@ class LoadCommand(plugin : JavaPlugin) : CommandExecutor, TabCompleter {
         return true
     }
 
-    override fun onTabComplete(sender: CommandSender, command: Command, label: String, args: Array<out String>?): MutableList<String>? {
-        return Collections.emptyList()
+    override fun onTabComplete(sender: CommandSender, command: Command, label: String, args: Array<out String>): MutableList<String>? {
+        return mutableListOf()
     }
 }

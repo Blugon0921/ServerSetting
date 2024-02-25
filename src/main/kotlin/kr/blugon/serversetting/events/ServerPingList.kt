@@ -1,9 +1,12 @@
 package kr.blugon.serversetting.events
 
 import com.destroystokyo.paper.event.server.PaperServerListPingEvent
+import kr.blugon.pluginutils.component.MiniColor.Companion.miniMessage
 import kr.blugon.serversetting.ServerSetting
+import kr.blugon.serversetting.ServerSetting.Companion.chatEffect
 import kr.blugon.serversetting.ServerSetting.Companion.effect
 import net.kyori.adventure.text.Component
+import net.kyori.adventure.text.Component.text
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -18,16 +21,14 @@ class ServerPingList : Listener {
             var motd2 = ServerSetting.yaml.getString("Motd.Motd2")
             if(motd1 == null) motd1 = ""
             if(motd2 == null) motd2 = ""
-
-            event.motd(Component.text("${motd1}\n${motd2}".effect()))
+            event.motd("${motd1}\n${motd2}".effect())
         }
 
         //FakeVersion
         if (ServerSetting.yaml.getBoolean("FakeVersion.apply")) {
             var version = ServerSetting.yaml.getString("FakeVersion.FakeVersion")
             if(version == null) version = Bukkit.getMinecraftVersion()
-            version = version.effect()
-            event.version = Objects.requireNonNull(version)
+            event.version = version.chatEffect()
         }
 
         //FakeMaxPlayers
