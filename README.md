@@ -35,7 +35,7 @@
 &r - white">RESET<br/>
 <<color:#000000>> - Hex Code<br/>
 
-%random% - red">Raorange">ndgold">omlime"> Coblue">lopurple">r<br/>
+%random% - Random Color<br/>
 %version% - Minecraft Version (X.XX.X)<br/>
 %year% - Now year (XXXX)<br/>
 %month% - Now month (XX)<br/>
