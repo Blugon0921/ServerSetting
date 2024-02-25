@@ -32,7 +32,7 @@
 &m - ~~Strikethrough~~<br/>
 &n - Underline<br/>
 &o - *Italic*<br/>
-&r - white">RESET<br/>
+&r - RESET<br/>
 <<color:#000000>> - Hex Code<br/>
 
 %random% - Random Color<br/>
